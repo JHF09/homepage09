@@ -1,0 +1,186 @@
+.me {
+  border-radius: 100px;
+  float: left;
+  margin: 10px;
+}
+.stories {
+  font-size: 20px;
+}
+h1 {
+  float: left;
+}
+.twitch,
+.twitter,
+.youtube_gaming,
+.youtube_anime,
+.youtube_acoustic,
+.facebook_profile,
+.facebook_page,
+.instagram {
+  width: 75px;
+  border-radius: 50px;
+  margin: 10px;
+  float: left;
+}
+.twitch_font,
+.twitter_font,
+.youtube_gaming_font,
+.youtube_anime_font,
+.youtube_acoustic_font,
+.facebook_profile_font,
+.facebook_page_font,
+.instagram_font {
+  float: left;
+}
+.section {
+  max-width: 300px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.video-card {
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.video-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover Effect: Zoom in and change opacity */
+.video-card:hover img {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+.video-card:hover {
+  cursor: pointer;
+}
+
+.video-title p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Modal Popup hidden by default */
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Target the modal when its id is activated */
+:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Modal content layout */
+.modal-content {
+  display: flex;
+}
+
+.left-section img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right-section {
+  flex: 1;
+  padding-left: 20px;
+  position: relative;
+}
+
+.download-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Adjusted for spacing */
+  text-decoration: none; /* No underline */
+  box-shadow: none; /* No glowing effect */
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+  text-decoration: none;
+}
+
+/* Read Now button */
+.read-now-btn {
+  background-color: #2196f3; /* Different color for Read Now */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Adjusted for spacing */
+  text-decoration: none;
+}
+
+.read-now-btn:hover {
+  background-color: #1e88e5; /* Darker shade on hover */
+  text-decoration: none;
+}
+
+/* Exit button */
+.exit-btn {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: #ff4d4d; /* Exit button color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.exit-btn:hover {
+  background-color: #ff1a1a; /* Darker shade on hover */
+}
+
+/* Title and description styling */
+h1 {
+  margin-top: 0;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+}
